@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "07:58:29 12/27/2018 "
+* "netlist" "c:\users\mehrdad\desktop\ca\ca4\part1\clochedsrlatch.sp "
+* "runtitle" "* clockedsrlatch"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ q = 306.3612u       
++ qb = 999.7818m       
++ r =   1.0000        
++ s =   0.            
++ vm =   1.0000        
++ w1 = 142.1542u       
++ w2 = 141.5643u       
++ x1.wire = 999.9931m       
++ x2.wire = 999.8757m       
++ x3.2 = 999.8909m       
++ x4.2 = 999.7275m       
++ x1.xnand.2 = 160.6437m       
++ x2.xnand.2 = 838.6228m       
+***   END: Saved Operating Point ***                     
