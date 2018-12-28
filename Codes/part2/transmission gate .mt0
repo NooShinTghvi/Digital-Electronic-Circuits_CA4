@@ -1,4 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
-.TITLE '* transmission gate'
- t_rise           t_fall           temper           alter#            
- -1.956e-08        1.761e-08         25.0000           1.0000         

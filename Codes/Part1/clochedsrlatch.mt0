@@ -1,4 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='A-2008.03 32-BIT'
-.TITLE '* clockedsrlatch'
- t_rise           t_fall           temper           alter#            
-  4.700e-10        3.597e-10         25.0000           1.0000         
