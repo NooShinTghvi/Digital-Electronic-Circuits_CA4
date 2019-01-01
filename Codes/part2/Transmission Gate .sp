@@ -16,13 +16,13 @@
 
 ***** Sources *****
 
-Vsupply	Vm		0	DC	1
+Vsupply	Vm		0		DC		1
 
-*VinD    D		0	DC		1
-VinD	 D 		0   Pulse	VDD  	GND 	0   	1p		1p 		500p 		2500p
+*VinD    D		0		DC		1
+VinD	 D 		0   	Pulse	VDD  	GND 	500p   1p		1p 		1500p 		3000p
 
-VinClk  clk 	0   Pulse	GND		VDD 	0   	1p 		1p 		3000p 		4000p
-*V      N+  	N-  Pulse   V1  	V2  	TD  	TR  	TF  	PW  		PER
+VinClk  clk 	0   	Pulse	GND		VDD 	0p   	1p 		1p 		3000p 		4000p
+*V      N+  	N-  	Pulse   V1  	V2  	TD  	TR  	TF  	PW  		PER
 ***** Component *****
 
 Xclk  	Vm     clk    clkBar	inverterCmos
@@ -55,7 +55,10 @@ Cl		out		0       5ff
 
 .MEASURE TRAN t_fall
 + trig V(Q) val = '0.9*VDD'  fall = 1
-+ targ V(Q) val = '0.1*VDD'  fall = 1
++ targ V(Q) val = '0.1*VDD'  fall = 2
 
+.MEASURE TRAN t_clk_to_Q
++ trig V(Q) val = '0.9*VDD'  rise = 1
++ targ V(Q) val = '0.9*VDD'  fall = 3
 .op
 .end

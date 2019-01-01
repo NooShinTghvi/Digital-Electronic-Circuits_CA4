@@ -16,15 +16,15 @@
 
 ***** Sources *****
 
-Vsupply	Vm		0	DC		1
-*VinS    S		0	DC		0
-VinS	S 		0   Pulse  	GND  	VDD 	500p   	1p		1p 		1000p 		3000p
+Vsupply	Vm		0		DC		1
+*VinS    S		0		DC		0
+VinS	S 		0   	Pulse  	GND  	VDD 	500p   	1p		1p 		310p 		3000p
 
-*VinR    R		0	DC		1
-VinR    R 		0   Pulse  	VDD  	GND   	500p   	1p 		1p 		2000p 		3000p
+*VinR    R		0		DC		1
+VinR    R 		0   	Pulse  	VDD  	GND   	0p   	1p 		1p 		2700p 		3000p
 
-VinClk  clk 	0   Pulse  	GND  	VDD 	0   	1p 		1p 		2000p 		4000p
-*V      N+  	N-  Pulse   V1  	V2  	TD  	TR  	TF  	PW  		PER
+VinClk  clk 	0   	Pulse  	GND  	VDD 	0p   	1p 		1p 		2000p 		4000p
+*V      N+  	N-  	Pulse   V1  	V2  	TD  	TR  	TF  	PW  		PER
 ***** Component *****
 
 X1      Vm      S		clk		W1      andCmos
